@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.API_CRUD_ANDROID"
+        tools:targetApi="31">
+
+        <!-- Define LoginActivity as the main activity -->
+        <activity
+            android:name=".network.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.API_CRUD_ANDROID">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities, such as MainActivity, can be defined here -->
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.API_CRUD_ANDROID" />
+
+
+
+        <!-- Other activities, such as MainActivity, can be defined here -->
+        <activity android:name=".Menu"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.API_CRUD_ANDROID" />
+
+        <!-- Actividad para mostrar Categorias -->
+        <activity android:name=".Categoria.CategoriaActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para insertar Categoria -->
+        <activity android:name=".InsertarCategoria"
+            android:theme="@style/AppTheme"/>
+        />
+
+        <!-- Actividad para editar Categoria -->
+        <activity android:name=".Categoria.EditarCategoriaActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para mostrar Cliente -->
+        <activity android:name=".ClienteActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Insertar Cliente -->
+        <activity android:name=".Cliente.InsertarCliente"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Editar Cliente -->
+        <activity android:name=".Cliente.EditarClienteActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para mostrar DetallePedido -->
+        <activity android:name=".DetallePedido.DetallePedidoActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Insertar DetallePedido -->
+        <activity android:name=".DetallePedido.InsertarDetallePedido"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Editar DetallePedido -->
+        <activity android:name=".DetallePedido.EditarDetallePedidoActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para mostrar Pedido -->
+        <activity android:name=".Pedido.PedidoActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Insertar Pedido -->
+        <activity android:name=".Pedido.InsertarPedido"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Editar Pedido -->
+        <activity android:name=".Pedido.EditarPedidoActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para mostrar Producto -->
+        <activity android:name=".Producto.ProductoActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Insertar Producto -->
+        <activity android:name=".InsertarProducto"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Editar Producto -->
+        <activity android:name=".Producto.EditarProductoActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para mostrar Usuarios -->
+        <activity android:name=".UsuarioActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Insertar Usuario -->
+        <activity android:name=".Usuario.InsertarUsuario"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Editar Usuario -->
+        <activity android:name=".Usuario.EditarUsuarioActivity"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Actividad para Editar Usuario -->
+        <activity android:name=".Usuario.RegisterActivity"
+            android:theme="@style/AppTheme"/>
+
+
+
+        />
+
+
+
+
+
+
+
+
+    </application>
+</manifest>
